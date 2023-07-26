@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Heading-menu{
+    background-color: rgb(211, 11, 211);
+}
+.Heading-menu ul{
+    text-align: center;
+    
+}
+.Heading-menu ul li{
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+}
+.Heading-menu ul li a{
+    color: #ddd;
+    padding: 15px 25px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    border-right: 2px solid #ddd;
+}
+
+/*  */
+
+.Heading-menu ul li:first-child {
+    border-left: 2px solid #dddd;
+}
+
+.Heading-menu ul li:hover>a{
+    background: rgba(128, 4, 128, .7);
+}
+
+
+
+.Heading-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background-color: rgb(211, 11, 211);
+    border-top: 1px solid #ddd;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: .5s;
+
+}
+.Heading-menu ul li  ul li{
+    display: block;
+    margin-left: 0;
+
+}
+.Heading-menu ul li  ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin-right:  4px;
+
+}
+
+.Heading-menu ul ul li:first-child {
+    border-left: none;
+}
+
+.Heading-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+
+}
+
+
+
+
+
+.sss{
+    text-align: center;
+    padding: 50px 50px;
+    background: rgb(90, 84, 84);
+}
+h2{
+
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    border: 1px solid bisque;
+    padding: 10px;
+    background: gray;
+}
+img{
+    width: 500px;
+    height: auto;
+    text-align: center;
+}
